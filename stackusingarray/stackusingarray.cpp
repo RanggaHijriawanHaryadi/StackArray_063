@@ -59,7 +59,14 @@ int main() {
 	char ch;
 	char ch;
 	while (true) {
-		
+		cout << "\nMenu" << endl;
+		cout << "1. push " << endl;
+		cout << "2. Pop " << endl;
+		cout << "3. Display in stack " << endl;
+		cout << "4. exit" << endl;
+		cout << "\nEnter yout choice (1-4): ";
+		cin >> ch;
+
 	}
 
 }
