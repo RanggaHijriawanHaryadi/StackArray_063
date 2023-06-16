@@ -57,5 +57,10 @@ public:
 int main() {
 	StackArray s;
 	char ch;
-	
+	char ch;
+	while (true) {
+		
+	}
+
+}
 	
