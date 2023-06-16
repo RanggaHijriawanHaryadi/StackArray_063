@@ -14,18 +14,21 @@ public:
 		top = -1;
 	}
 
-	int push(int element) {
+	void push() {
+		int element;
+		cout << "masukkan element : " ;
+		cin >> element;
 		if (top == 4) {
 			cout << "Number of data execend the limit" << endl;
-			return 0;
+			return ;
+
 		}
 
 		top++; //step2
 		stack_array[top] = element; // step 3
 		cout << endl;
-		cout << element << "ditambahkan(pushed)" << endl;
+		cout << element << " ditambahkan(pushed)  "<< endl;
 
-		return element;
 	}
 	void pop() {
 		if (empty()) { //step 1
@@ -45,9 +48,12 @@ public:
 			cout << "\nStack is empty." << endl;
 		}
 		else {
-			for (int top = top; top >= 0; top--)
+			for (int tmp = top; tmp >= 0; top--) {
 				cout << stack_array[top] << endl;
+			}
 		}
 	}
-	
 };
+int main() {
+	StackArray s;
+	
